@@ -2,6 +2,9 @@ const BASE_URL = "https://api.farmcode.io.vn/v1";
 // const BASE_URL = 'http://localhost:8000/api/v1';
 
 export const API = {
+  //BANNER
+  GET_BANNER: `${BASE_URL}/ielts-viet/banner`,
+  UPDATE_BANNER: `${BASE_URL}/ielts-viet/banner`,
   //SLIDER
   GET_ALL_SLIDER: `${BASE_URL}/ielts-viet/slider`,
   CREATE_SLIDER: `${BASE_URL}/ielts-viet/slider`,

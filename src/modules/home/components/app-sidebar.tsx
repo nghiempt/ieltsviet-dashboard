@@ -4,6 +4,7 @@ import * as React from "react";
 import {
   LogOut,
   GalleryHorizontal,
+  LayoutPanelTop,
   Star,
   Timer,
   Newspaper,
@@ -24,6 +25,12 @@ import { ROUTES } from "@/utils/route";
 
 const data = {
   projects: [
+    {
+      name: "Banner Trang Chủ",
+      url: "?tab=banner",
+      tab: "banner",
+      icon: LayoutPanelTop,
+    },
     {
       name: "Slider",
       url: "?tab=slider",

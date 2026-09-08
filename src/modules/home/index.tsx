@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/sidebar";
 import { useSearchParams } from "next/navigation";
 import Slider from "./modules/slider";
+import Banner from "./modules/banner";
 import Blog from "./modules/blog";
 import Review from "./modules/reviews";
 import TimeKeeping from "./modules/timekeeping";
@@ -28,6 +29,8 @@ export default function HomeClient() {
 
   const renderTab = (tab: string) => {
     switch (tab) {
+      case "banner":
+        return <Banner />;
       case "slider":
         return <Slider />;
       case "video":
@@ -47,6 +50,8 @@ export default function HomeClient() {
 
   const renderBreadcrumb = (tab: string) => {
     switch (tab) {
+      case "banner":
+        return "Banner Trang Chủ";
       case "slider":
         return "Slider";
       case "video":
